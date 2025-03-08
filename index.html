@@ -3,87 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I just completed a great course</title>
+    <title>I just learned about Automation with Resolve!</title>
     
-    <!-- Force LinkedIn to re-scrape with cache control -->
+    <!-- Critical LinkedIn Meta Tags for Large Preview -->
+    <meta property="og:title" content="I just learned about Automation with Resolve!">
+    <meta property="og:description" content="Check out what I learned about automation and how it can transform your workflow efficiency.">
+    <meta property="og:url" content="https://tamar-resolve.github.io/certificate-sample/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Resolve Learning">
+    
+    <!-- Image Tags - Critical for Large Format -->
+    <meta property="og:image" content="https://tamar-resolve.github.io/certificate-sample/resolve-card.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:image:alt" content="Resolve Automation Certificate">
+    
+    <!-- Twitter Card Tags (helps LinkedIn sometimes) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I just learned about Automation with Resolve!">
+    <meta name="twitter:description" content="Check out what I learned about automation and how it can transform your workflow efficiency.">
+    <meta name="twitter:image" content="https://tamar-resolve.github.io/certificate-sample/resolve-card.jpg">
+    
+    <!-- Force cache refresh -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     
-    <!-- Open Graph Meta Tags for LinkedIn -->
-    <meta property="og:title" content="I just learned about Automation with Resolve!">
-    <meta property="og:description" content="Just finished an amazing course! Learned so much, truly transformative. Highly recommend it!">
-    <meta property="og:image" content="https://tamar-resolve.github.io/certificate-sample/sample-image.jpg">
-    <meta property="og:url" content="https://tamar-resolve.github.io/certificate-sample/">
-    <meta property="og:type" content="article">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="628">
-    
-    <!-- Additional recommended tags -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Certificate Sample">
-    
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
             max-width: 800px;
             margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
+        .certificate {
             border: 1px solid #eee;
+            padding: 20px;
+            margin: 20px 0;
         }
-        .share-btn {
-            padding: 10px 20px;
-            background-color: #0077B5;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        .share-btn:hover {
-            background-color: #005582;
+        h1 {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>I just completed a great course</h1>
-    <p>Learn more about this exciting topic.</p>
-    <img src="https://tamar-resolve.github.io/certificate-sample/sample-image.jpg" alt="Course Certificate">
+    <h1>I just learned about Automation with Resolve!</h1>
     
-    <button id="linkedin-share-btn" class="share-btn">Share on LinkedIn</button>
+    <div class="certificate">
+        <h2>Certificate of Completion</h2>
+        <p>This certifies that <strong>Tamar Auber</strong> has successfully completed the course on Automation with Resolve.</p>
+        <p>Date: March 8, 2025</p>
+    </div>
     
-    <script>
-        document.getElementById('linkedin-share-btn').addEventListener('click', function() {
-            // Current URL
-            const currentUrl = encodeURIComponent(window.location.href);
-            
-            // Get metadata from the page
-            const title = encodeURIComponent(document.querySelector('meta[property="og:title"]').getAttribute('content'));
-            const description = encodeURIComponent(document.querySelector('meta[property="og:description"]').getAttribute('content'));
-            
-            // LinkedIn sharing URL
-            const linkedInUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${title}&summary=${description}`;
-            
-            // Open popup
-            const width = 600;
-            const height = 600;
-            const left = window.screen.width / 2 - width / 2;
-            const top = window.screen.height / 2 - height / 2;
-            
-            window.open(
-                linkedInUrl,
-                'linkedin-share-dialog',
-                `width=${width},height=${height},top=${top},left=${left},toolbar=0,location=0,menubar=0,directories=0,scrollbars=1`
-            );
-        });
-    </script>
+    <h3>What I Learned</h3>
+    <p>During this course, I gained valuable skills in automation techniques that will help streamline workflows and improve productivity. The course covered essential concepts including:</p>
+    <ul>
+        <li>Creating efficient automation workflows</li>
+        <li>Integrating systems for seamless operation</li>
+        <li>Advanced techniques for process optimization</li>
+        <li>Best practices for implementing automation in teams</li>
+    </ul>
+    
+    <p>This knowledge will be immediately applicable to my current projects and will help drive innovation in my organization.</p>
 </body>
 </html>
